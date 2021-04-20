@@ -1,0 +1,1 @@
+logparser "select REVERSEDNS(c-ip), c-ip, count(c-ip) as requestcount from \\OP00029-TSTWEB1\c$\inetpub\logs\LogFiles\W3SVC8\u_ex21*.log where cs-uri-stem like '/%' group by c-ip order by count(c-ip) desc"
